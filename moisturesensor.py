@@ -4,7 +4,7 @@ import time
  
 #GPIO SETUP
 channel = 21
-moisture = 0
+moisture = ()
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(channel, GPIO.IN)
 
@@ -14,6 +14,7 @@ def callback(channel):
                 moisture = 1
         else:
                 print ("poop")
+                moisture = 0
 
  
 GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)  # let us know when the pin goes HIGH or LOW
