@@ -11,7 +11,7 @@ GPIO.setup(channel, GPIO.IN)
 def callback(channel):
         if GPIO.input(channel):
                 print ("Water Detected!")
-                moisture = 1
+                moisture+= 1
         else:
                 print ("Water Detected!")
                 moisture = 0
