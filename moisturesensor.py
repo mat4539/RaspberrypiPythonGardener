@@ -4,7 +4,6 @@ import time
  
 #GPIO SETUP
 channel = 21
-moisture = ()
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(channel, GPIO.IN)
 
@@ -17,4 +16,3 @@ def callback(channel):
 # infinite loop
 while True:
         time.sleep(1)
-        print (moisture)
