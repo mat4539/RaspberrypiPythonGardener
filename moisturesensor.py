@@ -16,4 +16,4 @@ def callback(channel):
 # infinite loop
 while True:
         time.sleep(1)
-        print(callback)
+        print(channel)
