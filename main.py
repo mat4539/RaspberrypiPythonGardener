@@ -1,7 +1,7 @@
 import moisturesensor
 
 while True:
-    moisture = moisturesensor.channel()
+    moisture = moisturesensor.callback()
     if GPIO.input(moisture):
         print ("Water Detected!")
     else:
