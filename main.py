@@ -1,5 +1,5 @@
 import moisturesensor
 
 while True:
-    moisture = moisturesensor.callback
+    moisture = moisturesensor.callback()
     print(moisture)
