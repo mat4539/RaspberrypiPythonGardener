@@ -1,4 +1,5 @@
-import moisturesensor.get_water
+import moisturesensor
 
 while True:
-    print(get_water())
+    moisture = moisturesensor.check_water()
+    print(moisture)
