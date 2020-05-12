@@ -3,11 +3,11 @@ import temphumidity
 
 while True:
     moisture = moisturesensor.check_water()
-    temptemperature = temphumidity.check_temperature()
+    temperature = temphumidity.check_temperature()
     humidity = temphumidity.check_humidity()
-    print(temptemperature)
-    print(humidity)
-    
+
+    print("Temp={0:0.1f}C  Humidity={1:0.1f}%".format(temperature, humidity))
+
     if moisture==0:
         print("No Water Needed")
     else:
